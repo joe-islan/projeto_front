@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 01</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Logo</a>
+
+        <ul>
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="">sobre</a></li>
+            <li><a href="">contato</a></li>
+            <li><a href="">servisos</a></li>
+        </ul>
+
+    </header>
+
+
+    <section>
+        <h2 id="text"><span>It's time for a new</span><br> Adventure</h2>
+        <img src="bird1.png" id="bird1">
+        <img src="bird2.png" id="bird2">
+        <img src="forest.png" id="forest">
+        <a href="#" id="btn">Explore</a>
+
+        <img src="rocks.png" id="rocks">
+        <img src="water.png" id="water">
+    </section>
+
+    <div class="sec">
+        <h2>Parallax scrolling Effects</h2>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat aliquam massa, ac commodo ex imperdiet sollicitudin. Maecenas hendrerit feugiat augue ut laoreet. Sed semper porttitor tortor non mattis. Integer molestie commodo lacinia. Donec id metus scelerisque, mattis nulla vel, lobortis enim. Donec eget justo aliquet ante hendrerit lacinia. Nam elit justo, molestie eget sem non, blandit lobortis dui. Nam dui nisi, porttitor in viverra quis, euismod eu est. Vestibulum dignissim tincidunt urna id rhoncus. Suspendisse et ante vitae lacus tincidunt consequat a rutrum mauris. Praesent congue eu tortor in interdum. Donec gravida consectetur enim, sit amet lacinia dolor laoreet ut. Vivamus id suscipit lorem. Curabitur at gravida dui, tristique cursus nulla. Vestibulum ac lectus ut justo fermentum pretium.
+        </p><br>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat aliquam massa, ac commodo ex imperdiet sollicitudin. Maecenas hendrerit feugiat augue ut laoreet. Sed semper porttitor tortor non mattis. Integer molestie commodo lacinia. Donec id metus scelerisque, mattis nulla vel, lobortis enim. Donec eget justo aliquet ante hendrerit lacinia. Nam elit justo, molestie eget sem non, blandit lobortis dui. Nam dui nisi, porttitor in viverra quis, euismod eu est. Vestibulum dignissim tincidunt urna id rhoncus. Suspendisse et ante vitae lacus tincidunt consequat a rutrum mauris. Praesent congue eu tortor in interdum. Donec gravida consectetur enim, sit amet lacinia dolor laoreet ut. Vivamus id suscipit lorem. Curabitur at gravida dui, tristique cursus nulla. Vestibulum ac lectus ut justo fermentum pretium.
+        </p><br>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat aliquam massa, ac commodo ex imperdiet sollicitudin. Maecenas hendrerit feugiat augue ut laoreet. Sed semper porttitor tortor non mattis. Integer molestie commodo lacinia. Donec id metus scelerisque, mattis nulla vel, lobortis enim. Donec eget justo aliquet ante hendrerit lacinia. Nam elit justo, molestie eget sem non, blandit lobortis dui. Nam dui nisi, porttitor in viverra quis, euismod eu est. Vestibulum dignissim tincidunt urna id rhoncus. Suspendisse et ante vitae lacus tincidunt consequat a rutrum mauris. Praesent congue eu tortor in interdum. Donec gravida consectetur enim, sit amet lacinia dolor laoreet ut. Vivamus id suscipit lorem. Curabitur at gravida dui, tristique cursus nulla. Vestibulum ac lectus ut justo fermentum pretium.
+        </p><br>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat aliquam massa, ac commodo ex imperdiet sollicitudin. Maecenas hendrerit feugiat augue ut laoreet. Sed semper porttitor tortor non mattis. Integer molestie commodo lacinia. Donec id metus scelerisque, mattis nulla vel, lobortis enim. Donec eget justo aliquet ante hendrerit lacinia. Nam elit justo, molestie eget sem non, blandit lobortis dui. Nam dui nisi, porttitor in viverra quis, euismod eu est. Vestibulum dignissim tincidunt urna id rhoncus. Suspendisse et ante vitae lacus tincidunt consequat a rutrum mauris. Praesent congue eu tortor in interdum. Donec gravida consectetur enim, sit amet lacinia dolor laoreet ut. Vivamus id suscipit lorem. Curabitur at gravida dui, tristique cursus nulla. Vestibulum ac lectus ut justo fermentum pretium.
+        </p><br>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat aliquam massa, ac commodo ex imperdiet sollicitudin. Maecenas hendrerit feugiat augue ut laoreet. Sed semper porttitor tortor non mattis. Integer molestie commodo lacinia. Donec id metus scelerisque, mattis nulla vel, lobortis enim. Donec eget justo aliquet ante hendrerit lacinia. Nam elit justo, molestie eget sem non, blandit lobortis dui. Nam dui nisi, porttitor in viverra quis, euismod eu est. Vestibulum dignissim tincidunt urna id rhoncus. Suspendisse et ante vitae lacus tincidunt consequat a rutrum mauris. Praesent congue eu tortor in interdum. Donec gravida consectetur enim, sit amet lacinia dolor laoreet ut. Vivamus id suscipit lorem. Curabitur at gravida dui, tristique cursus nulla. Vestibulum ac lectus ut justo fermentum pretium.
+        </p>
+    </div>
+
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let forest = document.getElementById('forest');
+        let rocks = document.getElementById('rocks');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+
+            text.style.top = 50 + value * -0.5 + '%';
+            bird1.style.top =  value * -1.5 + 'px';
+            bird1.style.left =  value * 2 + 'px';
+            bird2.style.top =  value * -1.5 + 'px';
+            bird2.style.left =  value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+
+    </script>
+    
+</body>
+</html>
